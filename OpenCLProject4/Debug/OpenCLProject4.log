@@ -1,0 +1,50 @@
+﻿Сборка начата 17.04.2017 3:28:07.
+     1>Проект "c:\Users\Antoshka\documents\visual studio 2012\Projects\OpenCLProject4\OpenCLProject4\OpenCLProject4.vcxproj" в узле 2 (целевые объекты Build).
+     1>_Intel_OpenCL_Build_Rules:
+         Preprocessing: hello.cl
+         cmd.exe /Q /C "C:\TEMP\tmpf029804833254e65b8fc479515f22b4e.cmd"
+         "C:\Program Files (x86)\Intel\OpenCL SDK\6.3\bin\x86\ioc32.exe" -cmd=build -input="c:\Users\Antoshka\documents\visual studio 2012\Projects\OpenCLProject4\OpenCLProject4\hello.cl" -output="Debug\hello.out" -VS -device=CPU_2_1 -simd=default -targetos=current            -bo="           "
+         Setting target instruction set architecture to: Default (Advanced Vector Extension (AVX))
+         OpenCL Intel CPU device was found!
+         Device name: Intel(R) Core(TM) i7-3632QM CPU @ 2.20GHz
+         Device version: OpenCL 2.1 (Build 18)
+         Device vendor: Intel(R) Corporation
+         Device profile: FULL_PROFILE
+         Compilation started
+         Compilation done
+         Linking started
+         Linking done
+         Device build started
+         Device build done
+         Kernel <hello> was successfully vectorized (8)
+         Done.
+         hello info:
+         	Maximum work-group size: 8192
+         	Compiler work-group size: (0, 0, 0)
+         	Local memory size: 0
+         	Preferred multiple of work-group size: 128
+         	Minimum amount of private memory: 0
+         
+         Build succeeded!
+         
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Intel\OpenCL SDK\6.3\include" /Zi /nologo /W3 /WX- /Od /Oy- /D Win32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>main.cpp(86): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218): см. объявление "fopen"
+     1>main.cpp(103): warning C4996: 'clCreateCommandQueue': объявлен deprecate
+                 C:\Program Files (x86)\Intel\OpenCL SDK\6.3\include\CL/cl.h(1428): см. объявление "clCreateCommandQueue"
+     1>main.cpp(64): warning C4101: string: неиспользованная локальная переменная
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\antoshka\documents\visual studio 2012\Projects\OpenCLProject4\Debug\OpenCLProject4.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Intel\OpenCL SDK\6.3\lib\x86" OpenCL.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"c:\users\antoshka\documents\visual studio 2012\Projects\OpenCLProject4\Debug\OpenCLProject4.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\antoshka\documents\visual studio 2012\Projects\OpenCLProject4\Debug\OpenCLProject4.lib" /MACHINE:X86 Debug\main.obj
+         OpenCLProject4.vcxproj -> c:\users\antoshka\documents\visual studio 2012\Projects\OpenCLProject4\Debug\OpenCLProject4.exe
+       PostBuildEvent:
+         If exist "*.cl" copy "*.cl" "c:\users\antoshka\documents\visual studio 2012\Projects\OpenCLProject4\Debug\\"
+         :VCEnd
+         hello.cl
+         Скопировано файлов:         1.
+     1>Построение проекта "c:\Users\Antoshka\documents\visual studio 2012\Projects\OpenCLProject4\OpenCLProject4\OpenCLProject4.vcxproj" завершено (целевые объекты Build).
+
+Сборка успешно завершена.
+
+Затраченное время: 00:00:01.77
